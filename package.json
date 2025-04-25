@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@pandastack/event-tracker": "^1.0.0",
+    "@pandastack/event-tracker": "latest",
     "firebase": "^11.6.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
