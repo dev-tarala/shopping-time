@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
+import { browserTracker } from "@pandastack/event-tracker";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./components/header/Header.jsx";
 import AllProducts from "./routes/all-products/AllProducts.jsx";
@@ -62,6 +63,10 @@ const App = () => {
     const all_products = productsSnapshot.docs.map(doc => doc.data());
     return all_products;
   }
+
+  useEffect(() => {
+    browserTracker.init({ project_id: "shoppi2jbi2g" });
+  }, []);
 
   useEffect(() => {
   }, [activeCategory, GetProducts]);
