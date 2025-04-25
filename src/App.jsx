@@ -65,7 +65,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    browserTracker.init({ project_id: "shoppi2jbi2g" });
+    browserTracker.init({ project_id: "15" });
   }, []);
 
   useEffect(() => {
