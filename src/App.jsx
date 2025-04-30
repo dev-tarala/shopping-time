@@ -65,7 +65,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    browserTracker.init({ project_id: "f7d4f101-f7ea-4074-a5dc-083b24181e85" });
+    browserTracker.init({ project_id: "fb2764b1-77e5-48ee-aac9-88592ede00e5" });
   }, []);
 
   useEffect(() => {
