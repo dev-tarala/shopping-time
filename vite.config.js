@@ -5,6 +5,8 @@ export default defineConfig({
   base: '/',
   plugins: [react()],
   server: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    host: true, // Accept connections from all network interfaces
+    allowedHosts: true
   }
 });
